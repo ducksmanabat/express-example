@@ -6,6 +6,6 @@ services:
   - mysql
 
 before_script:
-  - mysql -e "create database IF NOT EXISTS questionenginejs_test;" -uroot
-  - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'development';" -uroot
-  - mysql -e "GRANT ALL PRIVILEGES ON questionenginejs_test. * TO 'dev'@'localhost';" -uroot
+  - mysql -e "create database IF NOT EXISTS database_dev;" -uroot
+  - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'gEVNL8Y9YU';" -uroot
+  - mysql -e "GRANT ALL PRIVILEGES ON database_dev. * TO 'dev'@'localhost';" -uroot

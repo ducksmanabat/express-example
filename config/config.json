@@ -2,13 +2,13 @@
   "development": {
     "username": "dev",
     "password": "gEVNL8Y9YU",
-    "database": "database_test",
+    "database": "database_dev",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "dev",
-    "password": "gEVNL8Y9YU",
+    "username": "root",
+    "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
