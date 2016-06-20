@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "5"
+
+services:
+  - mysql
+
+before_script:
+  - mysql -e "create database IF NOT EXISTS questionenginejs_test;" -uroot
+  - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'development';" -uroot
+  - mysql -e "GRANT ALL PRIVILEGES ON questionenginejs_test. * TO 'dev'@'localhost';" -uroot
